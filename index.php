@@ -15,7 +15,7 @@ function mandar_email($apiInstance, $content, $subject){
         'subject' => $subject,
         'sender' => ['name' => 'Meu Portfólio', 'email' => 'kalil.pacheco.zaidan@gmail.com'],
         'to' => [[ 'name' => 'Kalil', 'email' => 'kalil.pacheco.zaidan@gmail.com']],
-        'htmlContent' => "<html><body><p> {$content} {{params.bodyMessage}}</p></body></html>"
+        'htmlContent' => "<html><body><p> {$content}</p></body></html>"
     ]);
 
     try {
