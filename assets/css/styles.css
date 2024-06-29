@@ -323,6 +323,12 @@ img {
 .skills__ux {
   width: 85%;
 }
+.skills__powerbi {
+  width: 95%;
+}
+.skills__git {
+  width: 95%;
+}
 .skills__img {
   margin-bottom: 26rem;
   border-radius: 0.5rem;

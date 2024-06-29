@@ -1,10 +1,12 @@
 <?php
 
-function mandar_email($apiInstance, $content, $subject){
+$mandou = 'null';
+
+function mandar_email($name, $contact, $content){
 
     require_once(__DIR__ . '/vendor/autoload.php');
 
-    $config = SendinBlue\Client\Configuration::getDefaultConfiguration()->setApiKey('api-key', 'api');
+    $config = SendinBlue\Client\Configuration::getDefaultConfiguration()->setApiKey('api-key', 'chave');
 
     $apiInstance = new SendinBlue\Client\Api\TransactionalEmailsApi(
         new GuzzleHttp\Client(['verify' => false]),
@@ -12,18 +14,26 @@ function mandar_email($apiInstance, $content, $subject){
     );
 
     $email =new \SendinBlue\Client\Model\SendSmtpEmail([
-        'subject' => $subject,
+        'subject' => "Mensagem de portfólio online de {$name}",
         'sender' => ['name' => 'Meu Portfólio', 'email' => 'kalil.pacheco.zaidan@gmail.com'],
         'to' => [[ 'name' => 'Kalil', 'email' => 'kalil.pacheco.zaidan@gmail.com']],
-        'htmlContent' => "<html><body><p> {$content}</p></body></html>"
+        'htmlContent' => "<html><body><p> {$content}</p><p>Contato: {$contact}</p></body></html>"
     ]);
 
     try {
         $result = $apiInstance->sendTransacEmail($email);
-        print_r($result);
+        $mandou = print_r($result);
+        // $mandou = True;
     } catch (Exception $e) {
-        echo 'Exception when calling TransactionalEmailsApi->sendTransacEmail: ', $e->getMessage(), PHP_EOL;
+        $mandou = 'Exception when calling TransactionalEmailsApi->sendTransacEmail: ' . $e->getMessage();
+        // $mandou = False;
     }
+
+    return $mandou;
+}
+
+if (isset($_POST['name']) && isset($_POST['contact']) && isset($_POST['content'])) {
+    $mandou = mandar_email($_POST['name'], $_POST['contact'], $_POST['content']);
 }
 
 ?>
@@ -329,12 +339,22 @@ function mandar_email($apiInstance, $content, $subject){
             <section class="contact section" id="contact">
                 <h2 class="section-title">&lt;contato /&gt;</h2>
 
+                <!-- <?php if ($mandou == True) { ?>
+                    <h1> Mandou: <?php echo $mandou ?></h1>
+                <?php } elseif ($mandou == False) { ?>
+                    <h1> Mandou: <?php echo $mandou ?></h1>
+                <?php } ?> -->
+
+                <?php
+                echo $mandou;
+                ?>
+
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
+                    <form action="" method="post" class="contact__form">
+                        <input name="name" type="text" placeholder="Seu nome" class="contact__input" required>
+                        <input name="contact" type="text" placeholder="Seu contato" class="contact__input" required>
+                        <textarea name="content" cols="0" rows="10" class="contact__input" required></textarea>
+                        <input type="submit" value="Enviar" class="contact__button button">
                     </form>
                 </div>
             </section>
