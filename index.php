@@ -1,6 +1,6 @@
 <?php
 
-$mandou = 'null';
+$mandou = null;
 
 function mandar_email($name, $contact, $content){
 
@@ -22,11 +22,11 @@ function mandar_email($name, $contact, $content){
 
     try {
         $result = $apiInstance->sendTransacEmail($email);
-        $mandou = print_r($result);
-        // $mandou = True;
+        // $mandou = print_r($result);
+        $mandou = True;
     } catch (Exception $e) {
-        $mandou = 'Exception when calling TransactionalEmailsApi->sendTransacEmail: ' . $e->getMessage();
-        // $mandou = False;
+        // $mandou = 'Exception when calling TransactionalEmailsApi->sendTransacEmail: ' . $e->getMessage();
+        $mandou = False;
     }
 
     return $mandou;
@@ -339,21 +339,25 @@ if (isset($_POST['name']) && isset($_POST['contact']) && isset($_POST['content']
             <section class="contact section" id="contact">
                 <h2 class="section-title">&lt;contato /&gt;</h2>
 
-                <!-- <?php if ($mandou == True) { ?>
-                    <h1> Mandou: <?php echo $mandou ?></h1>
-                <?php } elseif ($mandou == False) { ?>
-                    <h1> Mandou: <?php echo $mandou ?></h1>
-                <?php } ?> -->
+                
 
-                <?php
-                echo $mandou;
-                ?>
+                <?php if ($mandou === True) { ?>
+                    <div class="alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                    <strong style="color:aliceblue;">E-mail enviado com sucesso!</strong> 
+                </div>
+                <?php } elseif ($mandou === False) { ?>
+                    <div class="alert" style="background-color: red;">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                    <strong style="color:aliceblue;">Algum erro ao enviar o e-mail</strong> 
+                </div>
+                <?php } ?>
 
                 <div class="contact__container bd-grid">
                     <form action="" method="post" class="contact__form">
                         <input name="name" type="text" placeholder="Seu nome" class="contact__input" required>
                         <input name="contact" type="text" placeholder="Seu contato" class="contact__input" required>
-                        <textarea name="content" cols="0" rows="10" class="contact__input" required></textarea>
+                        <textarea name="content" cols="0" placeholder="Sua mensagem" rows="10" class="contact__input" required></textarea>
                         <input type="submit" value="Enviar" class="contact__button button">
                     </form>
                 </div>
