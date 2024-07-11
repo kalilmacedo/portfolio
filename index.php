@@ -40,7 +40,7 @@ if (isset($_POST['name']) && isset($_POST['contact']) && isset($_POST['content']
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,7 +87,7 @@ if (isset($_POST['name']) && isset($_POST['contact']) && isset($_POST['content']
                 <div class="home__data">
                     <h1 class="home__title">Olá, &#128075;<br>Eu sou <span class="home__title-color">Kalil</span><br> Desenvolvedor Web<br>& Analista de Dados</h1>
 
-                    <a href="#" class="button">Contato</a>
+                    <a href="#contact" class="button">Contato</a>
                 </div>
 
                 <div class="home__social">
@@ -102,7 +102,7 @@ if (isset($_POST['name']) && isset($_POST['contact']) && isset($_POST['content']
                         </mask>
                         <g mask="url(#mask0)">
                             <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                            <image style="height:60%;" class="home__blob-img" x="40" y="70" href="assets/img/perfil.png"/>
                         </g>
                     </svg>
                 </div>
@@ -314,23 +314,23 @@ if (isset($_POST['name']) && isset($_POST['contact']) && isset($_POST['content']
                 <h2 class="section-title">&lt;experiencia /&gt;</h2>
 
                 <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
+                    <a href="prefeitura.html" class="work__img">
+                        <img style="size:110%" src="assets/img/prefeitura.jpg" alt="">
                     </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
+                    <a href="assembleia.html" class="work__img">
+                        <img src="assets/img/alema.png" alt="">
                     </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
+                    <a href="acaizeira.html" class="work__img">
+                        <img src="assets/img/acaizeira.png" alt="">
                     </a>
-                    <a href="" class="work__img">
+                    <!-- <a href="" class="work__img">
                         <img src="assets/img/work4.jpg" alt="">
                     </a>
                     <a href="" class="work__img">
                         <img src="assets/img/work5.jpg" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
+                        <img src="assets/img/work6.jpg" alt=""> -->
                     </a>
                 </div>
             </section>
