@@ -141,55 +141,60 @@ if (isset($_POST['name']) && isset($_POST['contact']) && isset($_POST['content']
                 <div class="skills__container bd-grid">          
                     <div>
                         <h2 class="skills__subtitle">Habilidades Profissionais</h2>
-                        <p class="skills__text">Um breve resumo de minhas habilidades acumuladas durante anos de estudo e trabalho árduo. Me identifico fortemente com a área de BackEnd; ademais, também sou proficiente em UI/UX.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-code-curly devicon-codepen-original skills__icon'></i>
-                                <span class="skills__name">BackEnd</span>
-                            </div>
-                            <div class="skills__bar skills__backend">
+                        <p class="skills__text">Um breve resumo de minhas habilidades acumuladas durante anos de estudo e trabalho árduo.
+                            Me identifico fortemente com a área de BackEnd; ademais, também sou proficiente em UI/UX.</p>
 
+                        <div class="skills__container">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-code-curly devicon-codepen-original skills__icon'></i>
+                                    <span class="skills__name">BackEnd</span>
+                                </div>
+                                <div class="skills__bar skills__backend">
+
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">85%</span>
+                                </div>
                             </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-code-curly devicon-devicon-plain skills__icon'></i>
+                                    <span class="skills__name">FrontEnd</span>
+                                </div>
+                                <div class="skills__bar skills__frontend">
+
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">70%</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-code-curly devicon-devicon-plain skills__icon'></i>
-                                <span class="skills__name">FrontEnd</span>
-                            </div>
-                            <div class="skills__bar skills__frontend">
+                        <div class="skills__container">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-code-curly devicon-minitab-plain skills__icon'></i>
+                                    <span class="skills__name">Power BI</span>
+                                </div>
+                                <div class="skills__bar skills__powerbi">
 
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">95%</span>
+                                </div>
                             </div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-code-curly devicon-minitab-plain skills__icon'></i>
-                                <span class="skills__name">Power BI</span>
-                            </div>
-                            <div class="skills__bar skills__powerbi">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class="bx bxl-code-curly devicon-php-plain skills__icon"></i>
+                                    <span class="skills__name">PHP</span>
+                                </div>
+                                <div class="skills__bar skills__php">
 
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">95%</span>
+                                </div>
                             </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="bx bxl-code-curly devicon-php-plain skills__icon"></i>
-                                <span class="skills__name">PHP</span>
-                            </div>
-                            <div class="skills__bar skills__php">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class="bx bxl-code-curly devicon-github-original skills__icon"></i>
