@@ -48,6 +48,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 h1, h2, p {
@@ -335,7 +336,7 @@ img {
   width: 95%;
 }
 .skills__img {
-  margin-bottom: 26rem;
+  margin-bottom: 24rem;
   border-radius: 0.5rem;
 }
 

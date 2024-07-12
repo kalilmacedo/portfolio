@@ -170,6 +170,7 @@ if (isset($_POST['name']) && isset($_POST['contact']) && isset($_POST['content']
                                 </div>
                             </div>
                         </div>
+
                         <div class="skills__container">
                             <div class="skills__data">
                                 <div class="skills__names">
@@ -195,115 +196,128 @@ if (isset($_POST['name']) && isset($_POST['contact']) && isset($_POST['content']
                                     <span class="skills__percentage">95%</span>
                                 </div>
                             </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="bx bxl-code-curly devicon-github-original skills__icon"></i>
-                                <span class="skills__name">Git</span>
-                            </div>
-                            <div class="skills__bar skills__git">
+                        </div>
 
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx devicon-laravel-original skills__icon'></i>
-                                <span class="skills__name">Laravel</span>
-                            </div>
-                            <div class="skills__bar skills__laravel">
+                        <div class="skills__container">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class="bx bxl-code-curly devicon-github-original skills__icon"></i>
+                                    <span class="skills__name">Git</span>
+                                </div>
+                                <div class="skills__bar skills__git">
 
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">95%</span>
+                                </div>
                             </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx devicon-dbeaver-plain skills__icon'></i>
-                                <span class="skills__name">Banco de Dados</span>
-                            </div>
-                            <div class="skills__bar skills__banco">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx devicon-azuresqldatabase-plain skills__icon'></i>
-                                <span class="skills__name">SQL</span>
-                            </div>
-                            <div class="skills__bar skills__sql">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">80%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx devicon-vuejs-plain skills__icon'></i>
-                                <span class="skills__name">Vue.js</span>
-                            </div>
-                            <div class="skills__bar skills__vue">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx devicon-laravel-original skills__icon'></i>
+                                    <span class="skills__name">Laravel</span>
+                                </div>
+                                <div class="skills__bar skills__laravel">
 
-                            </div>
-                            <div>
-                                <span class="skills__percentage">35%</span>
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">90%</span>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML</span>
+                        <div class="skills__container">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx devicon-dbeaver-plain skills__icon'></i>
+                                    <span class="skills__name">Banco de Dados</span>
+                                </div>
+                                <div class="skills__bar skills__banco">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">85%</span>
+                                </div>
                             </div>
-                            <div class="skills__bar skills__html">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx devicon-azuresqldatabase-plain skills__icon'></i>
+                                    <span class="skills__name">SQL</span>
+                                </div>
+                                <div class="skills__bar skills__sql">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">80%</span>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JavaScript</span>
+                        <div class="skills__container">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx devicon-vuejs-plain skills__icon'></i>
+                                    <span class="skills__name">Vue.js</span>
+                                </div>
+                                <div class="skills__bar skills__vue">
+
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">35%</span>
+                                </div>
                             </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">40%</span>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-html5 skills__icon'></i>
+                                    <span class="skills__name">HTML</span>
+                                </div>
+                                <div class="skills__bar skills__html">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">85%</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
+
+                        <div class="skills__container">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-css3 skills__icon'></i>
+                                    <span class="skills__name">CSS</span>
+                                </div>
+                                <div class="skills__bar skills__css">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">70%</span>
+                                </div>
                             </div>
-                            <div class="skills__bar skills__ux">
-                                
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-javascript skills__icon' ></i>
+                                    <span class="skills__name" style="font-size: 90%;">JavaScript</span>
+                                </div>
+                                <div class="skills__bar skills__js">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">40%</span>
+                                </div>
                             </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
+                        </div>
+
+                        <div class="skills__container">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxs-paint skills__icon'></i>
+                                    <span class="skills__name">UX/UI</span>
+                                </div>
+                                <div class="skills__bar skills__ux">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">85%</span>
+                                </div>
                             </div>
                         </div>
                     </div>
